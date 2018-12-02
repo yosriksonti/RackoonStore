@@ -1,0 +1,1 @@
+insert into ELog(MAT,CID,DAY,MONTH,YEAR) values('145TUN1232','ID#000001','25','11','2018')

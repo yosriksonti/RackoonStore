@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>Icons/car.png</file>
+        <file>Icons/add.png</file>
+        <file>Icons/block.png</file>
+        <file>Icons/database.png</file>
+        <file>Icons/Disabled.png</file>
+        <file>Icons/Enabled.png</file>
+        <file>Icons/log-in.png</file>
+        <file>Icons/plus-button.png</file>
+        <file>Icons/remove.png</file>
+        <file>Icons/parking.png</file>
+        <file>Sounds/button4.wav</file>
+        <file>Sounds/ps_1.mp3</file>
+        <file>Sounds/hadouken.mp3</file>
+    </qresource>
+</RCC>
