@@ -3,6 +3,8 @@
 #include <QPrinter>
 #include <QTextDocument>
 #include <QPrintDialog>
+#include <QProcess>
+
 #include "add_type.h"
 
 
@@ -13,8 +15,8 @@ Ray::Ray(QWidget *parent) :
 {
     ui->setupUi(this);
     timer = new QTimer(this);
-    connect(timer, SIGNAL(timeout()), this, SLOT(refrech()));
-    timer->start(1000);
+    //connect(timer, SIGNAL(timeout()), this, SLOT(refrech()));
+    //timer->start(1000);
 }
 
 Ray::~Ray()
@@ -179,9 +181,9 @@ void Ray::on_Btn_Print_clicked()
         << "</head>\n"
         "<body bgcolor=#ffffff link=#5000A0>\n"
         "<h1 style=\"text-align: center;\"><strong>LIST ITEL "+TT+"</strong></h1>"
-        "<table style=\"text-align: center; font-size: 18px;\" border=0>\n "
-          "</br> </br>";
+        "<table style=\"text-align: center; font-size: 18px;\" border=0>\n ";
     // headers
+    out << "<br> <br> <br> <br>";
     out << "<thead><tr bgcolor=#d6e5ff>";
     for (int column = 0; column < columnCount; column++)
         if (!ui->Tab_Prod->isColumnHidden(column))
@@ -320,4 +322,6 @@ void Ray::on_pushButton_clicked()
 
 void Ray::on_pushButton_11_clicked()
 {
+
+ system("python c://push.py");
 }
