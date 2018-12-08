@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>src/panier.png</file>
+        <file>src/salade.png</file>
+        <file>src/spaghetti.png</file>
+        <file>src/steak.png</file>
+        <file>src/panier_small.png</file>
+        <file>src/empty_small.png</file>
+        <file>src/salade_small.png</file>
+        <file>src/spaghetti_small.png</file>
+        <file>src/steak__small.png</file>
+    </qresource>
+    <qresource prefix="/sounds">
+        <file>src/Click.wav</file>
+    </qresource>
+</RCC>
